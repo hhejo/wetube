@@ -4,7 +4,7 @@
   "description": "The best way to watch videos.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/init.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/hhejo/wetube#readme",
   "dependencies": {
-    "@types/express": "^4.17.16",
+    "bcrypt": "^5.1.0",
     "express": "^4.18.2",
+    "mongoose": "^6.9.0",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
@@ -26,6 +27,7 @@
     "@babel/core": "^7.20.12",
     "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
+    "@types/express": "^4.17.16",
     "nodemon": "^2.0.20"
   }
 }
