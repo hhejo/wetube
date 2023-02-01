@@ -9,8 +9,8 @@ import { localsMiddleware } from "./middlewares";
 const app = express();
 const logger = morgan("dev");
 
-app.set("view engine", "pug"); // view engine을 pug로 셋
-app.set("views", process.cwd() + "/src/views"); // 작업 디렉터리 변경
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
 app.use(logger);
 app.use(express.urlencoded({ extended: true }));
 
